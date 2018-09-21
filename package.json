@@ -1,0 +1,27 @@
+{
+  "name": "storyteller-api",
+  "version": "0.1.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --require babel-register",
+    "start": "nodemon lib/index.js --exec babel-node",
+    "build": "babel lib -d dist --presets env",
+    "serve": "node dist/index.js"
+  },
+  "author": "Laura Knill",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^14.0.2",
+    "mongodb": "^3.1.6"
+  }
+}
